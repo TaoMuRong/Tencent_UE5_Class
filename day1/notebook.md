@@ -21,7 +21,35 @@
 - 将解决方案配置设置为 开发编辑器（Development Editor），然后将解决方案平台设置为 Win64，最后右键Engine文件夹中的UE5并选择 构建（Build）
 - 开始睡觉
 
+
+# 本人习惯使用JetBrains公司的产品，所以也使用了Rider进行构建
+
+- 打开[JetBrains ToolBox](https://www.jetbrains.com/zh-cn/lp/toolbox/)下载Rider
+- Rider构建和上述VS一样，使用Rider打开**UE5.sln**，构建选项设置如下
+
+![img_1.png](img_1.png)
+
+- 右键UE5文件夹，构建所选项目
+
 # 启动UE5编辑器
 
 - 右键UE5设置为启动项目
 - Debug->以新的实例开始
+- 打开UE5后选择第三人称项目，C++，移动平台，可压缩。创建，注意项目名不要中文，使用英文
+- 创建完后会自动打开VS，也可以在UE项目设置中设置默认编辑器为其他，如Rider，选择刚刚创建的项目名，右键构建，构建完后运行
+
+# 下载安卓SDK和NDK
+
+- 打开JetBrains ToolBox下载Android Studio，**注意**一定要安装在默认路径：C:\Program Files\Android\Android Studio，否则后面会报错，找不到Android Studio
+- 下载完后打开AS，一直继续next，安装和配置默认组件，选择更多操作-> SDK Manager->Android SDK Location->Edit->选择SDK下载
+- 勾选show package details
+- SDK Tools->Android SDK Command-line Tools (latest)->点击applay下载->Finish
+- PLATFORMS_VERSION：android-34，BUILDTOOLS_VERSION：34.0.0，CMAKE
+- 或者直接运行UnrealEngine-release\Engine\Extras\Android下的SetupAndroid.bat自动安装
+
+# 配置UE的SDK和NDK路径
+
+- 打开UE->编辑->项目设置->平台->Android SDK配置为如图所示->Android->接受证书
+![img_2.png](img_2.png)
+- 返回UE项目->平台->Android->选择Android ETC2，开发->打包项目->选择文件夹输出
+- 完成
