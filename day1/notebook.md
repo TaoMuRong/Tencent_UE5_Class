@@ -4,7 +4,7 @@
 - 注册EPIC账号
 - 将EPIC和Github账号关联，[流程参考官方链接](https://www.unrealengine.com/zh-CN/ue-on-github )（如果在[虚幻引擎账户绑定GitHub界面](https://www.epicgames.com/account/personal)时没有任何反应，建议开启加速器加速EPIC，本人当时使用过VPN和加速器，发现VPN加速无效果，使用雷神加速器加速EPIC后可以正常点击GitHub进行绑定）
 - 绑定成功后会收到EPIC发送的加入Github组织的邮件，加入后就能在GitHub上看到Unreal的[源代码](https://github.com/EpicGames/UnrealEngine)
-- 选择版本克隆仓库到本地，本人使用的时最新的5.5版本
+- 选择版本克隆仓库到本地，本人使用的是最新的5.5版本
 
 # Visual Studio 安装和设置
 
@@ -53,3 +53,5 @@
 ![img_2.png](img_2.png)
 - 返回UE项目->平台->Android->选择Android ETC2，开发->打包项目->选择文件夹输出
 - 完成
+
+# 由源码编译的UE5.5导出的安卓开发包位于**day1/Android_ETC2.zip**
