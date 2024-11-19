@@ -55,4 +55,3 @@
 - 完成
 
 # 由源码编译的UE5.5导出的安卓开发包位于**day1/Android_ETC2.zip**
-![img_3.jpg](img_3.jpg)
